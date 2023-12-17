@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Saira:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1 ,
+h2{
+    font-family: 'Saira', sans-serif;
+}
+/*hedar start*/
+header{
+    background-image: linear-gradient(to bottom, rgb(179, 13, 46), grey );
+    height: 100vh;
+}
+header .nav{
+    background-color: burlywood;
+   border-bottom: 2px solid gray;
+   position: fixed;
+   width: 100%;
+   z-index:1;
+   
+  
+}
+header .nav nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 1.5rem 2rem;
+    
+}
+.logo{
+    font-size: 1.5em;
+    color: blueviolet;
+    text-shadow: 4px 4px 7px white;
+    text-transform: uppercase;
+}
+header .nav nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+header .nav nav ul a{
+    margin: 0 15px;
+    color: rgb(166, 255, 0);
+    text-shadow: 5px 5px 4px black;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    transition: .6s ease;
+}
+header .nav nav ul a:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 8px;
+    padding: 2px;
+}
+/*content*/
+
+header .header-content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    max-width: 1100px;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+}
+header .header-content .content-text{
+    text-transform: capitalize;
+    font-size: 1.1em;
+    margin-bottom: 5rem;
+}
+header .header-content .content-text .text{
+    color: rgb(164, 255, 29);
+    padding: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+header .header-content .content-text .text2{
+    color: rgb(2, 9, 41);
+    text-shadow: 5px 5px 4px grey;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 50px;
+}
+header .header-content .content-text .title{
+    font-family: sans-serif;
+    padding: 5px;
+    color: whitesmoke;
+    font-weight: 500;
+    margin:10px 0 ;
+    font-size: 20px;
+}
+.btn{
+border-radius: 10px;
+background-color: black;
+color: yellow;
+padding: 8px 20px;
+font-size: 15px;
+transition: .7s ease;
+padding: 1px;
+}
+.btn:hover{
+    color: saddlebrown;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+header .header-content img{
+    max-width: 300px;
+    border-radius: 15px;
+    border: double rgb(104, 9, 167);
+    margin: auto;
+}
+/*hedar end*/
+/*skils-start*/
+#skills{
+    background-image: linear-gradient(to bottom, orange , grey);
+    padding: 6rem 0;
+    
+}
+#skills h2{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    text-shadow: 3px 3px 4px black;
+}
+#skills h2 .text-prmiry{
+    color: rgb(0, 179, 0);
+    text-shadow: 3px 4px 4px rgb(27, 31, 6);
+}
+#skills hr , #services hr{
+    width: 100px;
+    height: 3.5px;
+    background-color: rgb(131, 27, 27);
+    border: none;
+    margin: 5px auto 0;
+}
+#skills .skills-content{
+    margin-top: .1rem;
+   background-color: #0f272d;
+   border-radius: 15px;
+
+}
+#skills .container .row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+   text-align: center;
+   
+   
+}
+#skills .container .row .items{
+    color: aliceblue;
+    background-color: black;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    
+}
+#skills .container .row .items:hover{
+    box-shadow: 10px 10px 10px #00f4ab0c;
+}
+#skills .container .row .items .items1 img{
+    max-width: 150px;
+}
+
+.row .items img{
+    max-width: 40px;
+}
+
+/*skils-end*/
+/*services-start*/
+#services{
+    padding: 6rem 0;
+    background-image: linear-gradient(to bottom,rgb(255, 38, 0),gray);
+}
+#services h2{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #e100ff;
+    text-transform: capitalize;
+    text-shadow: 7px 7px 5px rgb(77, 76, 76);
+    text-transform: capitalize;
+}
+#services .text-prmiry{
+    color: yellow;
+    text-transform: capitalize;
+    text-shadow: 6px 6px 6px green;
+}
+#services .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services .heading img{
+    max-width: 70px;
+    margin-right: 10px;
+}
+#services .row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 4rem;
+    text-align: center;
+    column-gap: 2rem;
+    row-gap: 4rem;
+    align-items: center;
+}
+#services .row .item{
+    padding: 25px 20px;
+   background-color: burlywood;
+   border-radius: 30px;
+   box-shadow: 4px 4px 5px rgb(0, 0, 0);
+   transition: all 0.4s ease;
+   margin: 50px;
+}
+#services .row .item:hover{
+    transform: scale(1.04);
+}
+#services img{
+    max-width: 80px;
+    border-radius: 10px;
+}
+#services .row .item h3{
+    margin: 15px 0;
+    color: purple;
+    text-shadow: 4px 4px 5px yellow;
+    font-weight: 500;
+    font-size: 20px;
+}
+#services .row .item p{
+    font-size: 14px;
+}
+/*services-end*/
+/*projects -start*/
+#portfolio{
+    padding: 6rem 0;
+    background-image: linear-gradient(to right, red, gray);
+}
+#portfolio h2{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: darkgoldenrod;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 3px green;
+}
+#portfolio hr{
+    width: 100px;
+    height: 3.5px;
+    background-image: linear-gradient(to right, gray ,yellow);
+    border: none;
+    margin: 5px auto 0;
+}
+#portfolio .container .text-prmiry{
+    text-transform: uppercase;
+    color: rgb(233, 168, 3);
+    text-shadow: 5px 5px 4px blue;
+} 
+#portfolio .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+#portfolio .row .item h3{
+    font-weight: 500;
+    color: rgb(10, 255, 165);
+    text-shadow: 5px 5px 10px black;
+    text-transform: capitalize;
+
+}
+#portfolio .row .item a{
+    color: azure;
+    padding-top: 5px;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 7px blue;
+}
+#portfolio .row .item{
+    background-image: linear-gradient(to right, brown,transparent);
+    border-radius: 15px;
+    padding: 25px 20px; 
+    margin: 50px;
+    box-shadow: 4px 4px 5px blue;
+    transition: all .4s ease;
+    
+    
+}
+#portfolio .row .item:hover{
+    transform: scale(1.04);
+    
+    color: black;
+    box-shadow: 6px 6px 5px green;
+}
+#portfolio .row .item img{
+    max-width: 50%;
+    
+}
+/*projects-end*/
+/*contace-start*/
+#contact{
+    padding: 5rem 0;
+    background-image: linear-gradient(to bottom,brown,gold);
+}
+#contact .get{
+    max-width: 70px;
+    align-items: center;
+   
+   
+    
+}
+#contact .row{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: linear-gradient(to left, grey, transparent);
+    box-shadow: 3px 3px 20px black;
+    padding: 2rem 3rem;
+    margin: 60px;
+    border-radius: 20px;
+    column-gap: 2rem;
+}
+#contact .row img{
+    max-width: 400px;
+}
+#contact .row input, #contact .row textarea{
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    outline: gray;
+    background-color: wheat;
+    border: 2px double green;
+    box-shadow: 3px 3px 5px white;
+}
+#contact  .btn-primary{
+    color: white;
+    background-color: rgb(255, 0, 64);
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px blue;
+    font-size: 25px;
+}
+#contact  .btn-primary:hover{
+    color: yellow;
+    background-color: black;
+    border-radius: 6px;
+    box-shadow: 4px 4px 6px wheat;
+}
+#contact h2{
+    text-align: center;
+    align-items: center;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: darkorange;
+    text-transform: capitalize;
+    text-shadow: 4px 4px 6px black;
+    
+    
+}
+#contact h2 .text-prmiry{
+    color: crimson;
+    text-transform: capitalize;
+    text-shadow: 5px 5px 6px rgb(27, 23, 23);
+}
+#contact hr{
+    width: 100px;
+    height: 3.5px;
+    background-image: linear-gradient(to right, gray ,yellow);
+    border: none;
+    margin: 3px auto 0;
+}
+
+/*contact-end*/
+/*tablet*/
+@media (max-width: 768px)  {
+    header .nav nav{
+        display: block;
+        text-align: center;
+    }
+    header .nav nav ul{
+        margin-top: 20px;
+    }
+    header .nav nav ul a{
+        margin: 0 8px;
+    }
+    header .header-content{
+        grid-template-columns: 1fr;
+    }
+    header .header-content .content-text{
+        margin-bottom: 0rem;
+        margin-top: 10rem;
+    }
+    header .header-content img{
+        max-width: 200px;
+        margin: auto;
+    }
+   
+    header .header-content .content-text .text2{
+        font-size: 40px;
+    }
+    #skills .container .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #services .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #portfolio .row {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    #contact .row{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #contact .row img{
+        max-width: 250px;
+        margin: auto;
+    }
+}
+/*mobile responcive*/
+    @media (max-width: 528px){
+        header .header-content .content-text .text2{
+            font-size: 32px;
+        }
+        header .header-content .content-text .text{
+            font-size: 15px;
+        }
+        header .header-content .content-text .title{
+            font-size: 15px;
+        }
+        #skills h2{
+            font-size: 30px;
+        }
+        #services h2{
+            font-size: 30px;
+        }
+        #portfolio h2{
+            font-size: 30px;
+        }
+        #contact h2{
+            font-size: 30px;
+        }
+        #skills .container .row,  #services .row ,
+        #portfolio .row ,   #contact .row{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        #contact .row{
+            padding: 2rem 1rem;
+        }
+    }
